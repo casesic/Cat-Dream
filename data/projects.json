@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Portfolio OS",
+    "description": "一个为自由职业者设计的作品集系统，支持案例展示、联系表单与轻量 CMS 内容维护。",
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "link": "https://example.com/portfolio-os"
+  },
+  {
+    "name": "Quiet Notes",
+    "description": "围绕沉浸式写作体验打造的在线笔记产品，重点优化阅读模式、标签过滤与全文检索。",
+    "stack": ["React", "Node.js", "PostgreSQL"],
+    "link": "https://example.com/quiet-notes"
+  },
+  {
+    "name": "Launch Week",
+    "description": "用于产品发布周活动的营销页面集合，包含倒计时、更新日志和邮件订阅模块。",
+    "stack": ["Next.js", "Vercel", "Resend"],
+    "link": "https://example.com/launch-week"
+  }
+]

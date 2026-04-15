@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f7f4ec;
+  --foreground: #1f2937;
+  --card: rgba(255, 255, 255, 0.85);
+  --border: rgba(31, 41, 55, 0.12);
+  --accent: #ca8a04;
+  --accent-strong: #92400e;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(253, 224, 71, 0.28), transparent 30%),
+    radial-gradient(circle at top right, rgba(249, 168, 212, 0.22), transparent 28%),
+    linear-gradient(180deg, #fdf8ef 0%, #f7f4ec 45%, #efe9db 100%);
+  color: var(--foreground);
+}
+
+a {
+  transition: color 150ms ease, opacity 150ms ease;
+}
+
+.prose-content h1,
+.prose-content h2,
+.prose-content h3 {
+  @apply mt-10 mb-4 font-semibold tracking-tight text-slate-900;
+}
+
+.prose-content h1 {
+  @apply text-4xl;
+}
+
+.prose-content h2 {
+  @apply text-3xl;
+}
+
+.prose-content h3 {
+  @apply text-2xl;
+}
+
+.prose-content p,
+.prose-content ul,
+.prose-content ol,
+.prose-content blockquote {
+  @apply mb-5 leading-8 text-slate-700;
+}
+
+.prose-content ul {
+  @apply list-disc pl-6;
+}
+
+.prose-content ol {
+  @apply list-decimal pl-6;
+}
+
+.prose-content li {
+  @apply mb-2;
+}
+
+.prose-content blockquote {
+  @apply border-l-4 border-amber-600/40 pl-4 italic text-slate-600;
+}
+
+.prose-content code {
+  @apply rounded bg-slate-900 px-1.5 py-0.5 text-sm text-amber-100;
+}
+
+.prose-content pre {
+  @apply mb-5 overflow-x-auto rounded-2xl bg-slate-900 p-4 text-amber-50;
+}
+
+.prose-content pre code {
+  @apply bg-transparent p-0 text-inherit;
+}
