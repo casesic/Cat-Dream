@@ -9,12 +9,16 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <section className="space-y-8">
-      <div className="space-y-3">
-        <p className="text-sm uppercase tracking-[0.3em] text-amber-800">Projects</p>
-        <h1 className="font-serif text-4xl font-semibold text-slate-900">项目展示</h1>
-        <p className="max-w-2xl text-lg leading-8 text-slate-700">
-          这里先通过本地 JSON 文件维护项目数据，后续可以无缝切换成 CMS 或数据库。
+    <section className="space-y-10">
+      <div className="max-w-3xl space-y-4">
+        <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--accent)]">
+          Projects
+        </p>
+        <h1 className="text-4xl font-semibold tracking-tight text-[color:var(--foreground)]">
+          项目展示
+        </h1>
+        <p className="text-lg leading-8 text-[color:var(--foreground-muted)]">
+          这里先使用本地 JSON 维护项目数据，结构足够轻，也便于将来切换到 CMS、数据库或更完整的项目详情页。
         </p>
       </div>
 

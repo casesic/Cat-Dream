@@ -4,19 +4,21 @@ import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "博客",
-  description: "查看所有博客文章，内容由 Markdown 文件静态生成。"
+  description: "查看所有博客文章，内容由本地 Markdown 文件静态生成。"
 };
 
 export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <section className="space-y-8">
-      <div className="space-y-3">
-        <p className="text-sm uppercase tracking-[0.3em] text-amber-800">Blog</p>
-        <h1 className="font-serif text-4xl font-semibold text-slate-900">博客文章</h1>
-        <p className="max-w-2xl text-lg leading-8 text-slate-700">
-          所有文章都来自本地 `posts` 目录，在构建时静态生成，适合部署到 Vercel。
+    <section className="space-y-10">
+      <div className="max-w-3xl space-y-4">
+        <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--accent)]">Blog</p>
+        <h1 className="text-4xl font-semibold tracking-tight text-[color:var(--foreground)]">
+          博客文章
+        </h1>
+        <p className="text-lg leading-8 text-[color:var(--foreground-muted)]">
+          所有文章都来自本地 `posts` 目录，在构建阶段完成静态生成，适合持续写作，也适合保持结构简单。
         </p>
       </div>
 

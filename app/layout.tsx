@@ -8,17 +8,17 @@ export const metadata: Metadata = {
     default: "Cat Dreams",
     template: "%s | Cat Dreams"
   },
-  description: "个人网站，记录自我介绍、博客文章与项目作品。",
-  keywords: ["Next.js", "博客", "个人网站", "Tailwind CSS", "Vercel"],
+  description: "Cat Dreams 是一个基于 Next.js 构建的个人网站，用来展示文章、项目和持续生长的想法。",
+  keywords: ["Next.js", "个人网站", "博客", "Tailwind CSS", "Vercel"],
   openGraph: {
     title: "Cat Dreams",
-    description: "个人网站，记录自我介绍、博客文章与项目作品。",
+    description: "一个基于 Next.js 构建的个人网站，用来展示文章、项目和持续生长的想法。",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "Cat Dreams",
-    description: "个人网站，记录自我介绍、博客文章与项目作品。"
+    description: "一个基于 Next.js 构建的个人网站，用来展示文章、项目和持续生长的想法。"
   }
 };
 

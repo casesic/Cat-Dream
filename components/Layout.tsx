@@ -8,31 +8,35 @@ const navItems = [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative">
-      <div className="absolute inset-x-0 top-0 -z-10 h-72 bg-gradient-to-b from-amber-100/60 to-transparent" />
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-8 sm:px-8 lg:px-10">
-        <header className="mb-12 flex flex-col gap-6 rounded-[2rem] border border-white/70 bg-white/75 px-6 py-5 shadow-lg shadow-slate-900/5 backdrop-blur md:flex-row md:items-center md:justify-between">
-          <Link href="/" className="font-serif text-2xl font-semibold tracking-tight text-slate-900">
-            Cat Dreams
-          </Link>
+    <div className="min-h-screen bg-[color:var(--background)]">
+      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 sm:px-8 lg:px-10">
+        <header className="sticky top-0 z-10 mb-16 bg-[color:var(--background-elevated)]/95 backdrop-blur-sm">
+          <div className="flex flex-col gap-5 border-b border-[color:var(--border)] py-6 md:flex-row md:items-center md:justify-between">
+            <Link
+              href="/"
+              className="text-lg font-medium uppercase tracking-[0.18em] text-[color:var(--foreground)]"
+            >
+              Cat Dreams
+            </Link>
 
-          <nav className="flex flex-wrap items-center gap-2 text-sm font-medium text-slate-600">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-full px-4 py-2 hover:bg-slate-900 hover:text-white"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+            <nav className="flex flex-wrap items-center gap-2 text-sm text-[color:var(--foreground-muted)]">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-xl px-4 py-2 hover:bg-[color:var(--background-soft)] hover:text-[color:var(--foreground)]"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
         </header>
 
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-8">{children}</main>
 
-        <footer className="mt-16 border-t border-slate-200/80 py-8 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Cat Dreams. Built with Next.js, Markdown and Vercel.</p>
+        <footer className="mt-20 border-t border-[color:var(--border)] py-8 text-sm text-[color:var(--foreground-subtle)]">
+          <p>Cat Dreams. Built with Next.js, Markdown and Vercel.</p>
         </footer>
       </div>
     </div>
